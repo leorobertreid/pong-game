@@ -64,10 +64,13 @@ const createPaddles = (paddleWidth, paddleHeight, starting1, starting2, paddleSp
     let paddle1 = new Paddle(paddleWidth, paddleHeight, starting1.x, starting1.y, ctx, paddle1Color, 1, paddleSpeed);
     let paddle2 = new Paddle(paddleWidth, paddleHeight, starting2.x, starting2.y, ctx, paddle2Color, 1, paddleSpeed);
 
+    paddle1.handleKeys();
+    paddle2.handleKeys();
+
     return {
         "paddle1": paddle1,
         "paddle2": paddle2,
-    }
+    };
 }
 
 export default createPaddles;
