@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     text-align: center;
     font-family: "Permanent Marker", cursive;
@@ -14,7 +18,7 @@ body {
     font-size: 100px;
 }
 
-#resetBtn {
+#startBtn, #resetBtn {
     font-family: "Permanent Marker", cursive;
     font-size: 22px;
     width: 100px;
